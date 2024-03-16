@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В коде, написанном по парадигме ООП, выделяют четыре основных элемента:\n\n1. Объект.\nЧасть кода, которая описывает элемент с конкретными характеристиками и функциями. Карточка товара в каталоге интернет-магазина — это объект. Кнопка «заказать» — тоже.\n\n2. Класс.\nШаблон, на базе которого можно построить объект в программировании. Например, у интернет-магазина может быть класс «Карточка товара», который описывает общую структуру всех карточек. И уже из него создаются конкретные карточки — объекты.\n\nКлассы могут наследоваться друг от друга. Например, есть общий класс «Карточка товара» и вложенные классы, или подклассы: «Карточка бытовой техники», «Карточка ноутбука», «Карточка смартфона». Подкласс берёт свойства из родительского класса, например, цену товара, количество штук на складе или производителя. При этом имеет свои свойства, например, диагональ дисплея для «Карточки ноутбука» или количество сим-карт для «Карточки смартфона»."
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/text_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Метод.\nФункция внутри объекта или класса, которая позволяет взаимодействовать с ним или другой частью кода. В примере с карточками товара метод может:\n\n● Заполнить карточку конкретного объекта нужной информацией.\n● Обновлять количество товара в наличии, сверясь с БД.\n● Сравнивать два товара между собой.\n● Предлагать купить похожие товары."
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text here"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
